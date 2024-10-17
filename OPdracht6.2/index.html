@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleur Aanpassen</title>
+    <style>
+        h1 {
+            color: black; /* Standaard kleur */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="mijnTitel">Originele Titel</h1>
+    <button onclick="kleur_aanpassen()">Pas Kleur en Tekst Aan</button>
+
+    <script>
+        function kleur_aanpassen() {
+            const titel = document.getElementById('mijnTitel');
+            titel.style.color = 'red'; // Pas de kleur aan
+            titel.textContent = 'Inhoud aangepast!'; // Pas de tekst aan
+        }
+    </script>
+</body>
+</html>
